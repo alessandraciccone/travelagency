@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!--INIZIO NAVBAR-->
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ml-5 m-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/mare.jpg" style="width: 80px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Saldi">Saldi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#WelcomeSummer">Welcome Summer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#LastMinute">Last Minute</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Recensioni">Recensioni</a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Cerca posti da Sogno"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success text-danger border border-1 border-danger"
+                type="submit"
+              >
+                Cerca
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--fine nav-->
+
+      <div class="container">
+        <div class="row">
+          <div class="col bg-light rounded-3 p-5 mt-3 shadow">
+            <div class="d-flex align-items-baseline">
+              <h1 class="text-muted fw-light">Travel Island-</h1>
+              <span class="text-muted fw-light m-4"> Feel the islands</span>
+            </div>
+            <!--fine div h1-->
+            <hr class="text-muted fw-light" />
+            <div>
+              <p class="text-muted fw-light fst-italic">
+                Scopri le isole più in voga del momento!
+              </p>
+            </div>
+
+            <button type="button" class="btn btn-info text-light mt-2">
+              Prenota ora
+            </button>
+          </div>
+          <!--fine div col-->
+        </div>
+        <!--fine div row-->
+      </div>
+      <!--fine container-->
+    </header>
+    <main>
+      <div class="d-flex justify-content-between mt-5 ms-5 me-5">
+        <h3>Saldi</h3>
+        <button
+          class="btn text-info"
+          data-bs-toggle="collapse"
+          data-bs-target="#miaSezione"
+        >
+          Nascondi questa sezione
+        </button>
+      </div>
+      <!--fine div saldi-->
+
+      <!-- Sezione da nascondere -->
+      <div class="collapse mt-3" id="miaSezione">
+        <div class="card card-body">
+          Questa sezione può essere nascosta o mostrata.
+        </div>
+      </div>
+      <!--inizio container mia sezione(quella da nascondere)-->
+      <div class="container" id="miaSezione">
+        <div class="row">
+          <div class="col col-6 col-md-4 col-lg-3">
+            <div class="card border border-1 border-info">
+              <img
+                src="./assets/madagascar.jpg"
+                class="card-img-top"
+                alt="Madagascar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Madagascar</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-info text-black">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <!--!fine prima colonna-->
+          <div class="col col-6 col-md-4 col-lg-3">
+            <div class="card border border-1 border-info">
+              <img
+                src="./assets/madagascar.jpg"
+                class="card-img-top"
+                alt="Maldive"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Maldive</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <!--!fine seconda colonna-->
+          <div class="col col-6 col-md-4 col-lg-3">
+            <div class="card border border-1 border-info">
+              <img
+                src="./assets/madagascar.jpg"
+                class="card-img-top"
+                alt="Martinica"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Martinica</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-info text-black">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <!--!fine terza colonna-->
+          <div class="col col-6 d-md-none d-lg-block col-lg-3">
+            <div class="card border border-1 border-info">
+              <img
+                src="./assets/madagascar.jpg"
+                class="card-img-top"
+                alt="Zanzibar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Zanzibar</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-info text-black">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <!--!fine quarta colonna-->
+        </div>
+        <!--fine row saldi-->
+      </div>
+      <!--fine container saldi-->
+
+      <!--inizio div welcome summer-->
+      <div class="d-flex justify-content-between mt-5 ms-5 me-5">
+        <h3>Welcome summer</h3>
+        <button
+          class="btn text-info"
+          data-bs-toggle="collapse"
+          data-bs-target="#mySezione"
+        >
+          Nascondi questa sezione
+        </button>
+      </div>
+      <div class="collapse mt-3" id="MySezione">
+        <div class="card card-body">
+          Questa sezione può essere nascosta o mostrata.
+        </div>
+      </div>
+
+      <!--fine div welcome summer-->
+      <div class="container shadow" id="mySezione">
+        <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 mt-2">
+          <div class="col">
+            <div class="card shadow">
+              <img
+                src="./assets/madagascar.jpg"
+                class="card-img-top"
+                alt="Tenerife"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tenerife</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <!--fine prima col welcome summer-->
+          <div class="col">
+            <div class="card shadow">
+              <img
+                src="./assets/madagascar.jpg"
+                class="card-img-top"
+                alt="Minorca"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Minorca</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <!--fine seconda col welcome summer-->
+
+          <div class="col">
+            <div class="card shadow">
+              <img
+                src="./assets/madagascar.jpg"
+                class="card-img-top"
+                alt="Zanzibar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Zanzibar</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-info">Prenots</a>
+              </div>
+            </div>
+          </div>
+          <!--fine terza col welcome summer-->
+
+          <div class="col">
+            <div class="card shadow">
+              <img
+                src="./assets/madagascar.jpg"
+                class="card-img-top"
+                alt="Madagascar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Madagascar</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <!--fine quarta col welcome summer-->
+
+          <div class="col">
+            <div class="card shadow">
+              <img
+                src="./assets/madagascar.jpg"
+                class="card-img-top"
+                alt="Madagascatr"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Maldive</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <!--fine quinta col welcome summer-->
+
+          <div class="col">
+            <div class="card shadow">
+              <img
+                src="./assets/madagascar.jpg"
+                class="card-img-top"
+                alt="Martinica"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Martinica</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <!--fine sesta col welcome summer-->
+        </div>
+        <!--fine div row welcome summer-->
+      </div>
+      <!--fine div welcome summer-->
+
+      <!--inizio offerta del giorno-->
+
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <h3 class="mb-4">Offerta del giorno</h3>
+
+            <div class="d-flex align-items-center">
+              <!-- Immagine -->
+              <img
+                src="./assets/madagascar.jpg"
+                alt="Madagascar"
+                class="img-fluid me-4"
+                style="max-width: 300px"
+              />
+              <!-- Testo e bottone -->
+
+              <div>
+                <p class="mb-3 fs-3">
+                  Non perdere l'occasione! Dal 10.08 al 20.08 volo per Creta e
+                  hotel a soli <strong>500 euro</strong>!
+                </p>
+                <button type="button" class="btn btn-dark fw-bold rounded-5">
+                  Prenota
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--inizio div Last minute-->
+      <div class="d-flex justify-content-between mt-5 ms-5 me-5">
+        <h3>Last Minute</h3>
+      </div>
+      <div class="container">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6">
+          <div class="col">
+            <img
+              src="./assets/madagascar.jpg"
+              alt="Madagascar"
+              class="img-fluid m-2"
+            />
+          </div>
+          <!--fine prima col last minute-->
+          <div class="col">
+            <img
+              src="./assets/madagascar.jpg"
+              alt="madagascar"
+              class="img-fluid m-2"
+            />
+          </div>
+          <!--fine seconda col last minute-->
+          <div class="col">
+            <img
+              src="./assets/madagascar.jpg"
+              alt="Madagascar"
+              class="img-fluid m-2"
+            />
+          </div>
+          <!--fine terza col last minute-->
+          <div class="col">
+            <img
+              src="./assets/madagascar.jpg"
+              alt="Madagascar"
+              class="img-fluid m-2"
+            />
+          </div>
+          <!--fine quarta col last minute-->
+          <div class="col">
+            <img
+              src="./assets/madagascar.jpg"
+              alt="Madagascar"
+              class="img-fluid m-2"
+            />
+          </div>
+          <!--fine quinta col last minute-->
+          <div class="col">
+            <img
+              src="./assets/madagascar.jpg"
+              alt="Madagascar"
+              class="img-fluid m-2"
+            />
+          </div>
+          <!--fine sesta col last minute-->
+        </div>
+        <!--fine row last minute-->
+      </div>
+      <!--fine container last miniute-->
+
+      <!--inizio div dicono di noi-->
+      <div class="d-flex justify-content-center mt-3">
+        <h3>Dicono di noi</h3>
+      </div>
+      <div class="container">
+        <div class="row d-flex flex-column">
+          <div class="col">
+            <div class="d-flex justify-content-start">
+              <img
+                src="./assets/cane.jpg"
+                alt="cane"
+                style="width: 40px; height: 40px"
+                class="border border-2 border-info rounded-3 me-2"
+              />
+
+              <p>Username</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              optio animi iste corporis dolorum reprehenderit nulla odit
+              asperiores voluptatibus qui possimus voluptates culpa vel,
+              exercitationem eum doloremque expedita aliquam praesentium.
+            </p>
+          </div>
+          <!--fine prima col-->
+
+          <div class="col">
+            <div class="d-flex justify-content-start">
+              <img
+                src="./assets/cane.jpg"
+                alt="cane"
+                style="width: 40px; height: 40px"
+                class="border border-2 border-info rounded-3 me-2"
+              />
+
+              <p>Username</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              optio animi iste corporis dolorum reprehenderit nulla odit
+              asperiores voluptatibus qui possimus voluptates culpa vel,
+              exercitationem eum doloremque expedita aliquam praesentium.
+            </p>
+          </div>
+          <!--fine seconda col-->
+
+          <div class="col">
+            <div class="d-flex justify-content-start">
+              <img
+                src="./assets/cane.jpg"
+                alt="cane"
+                style="width: 40px; height: 40px"
+                class="border border-2 border-info rounded-3 me-2"
+              />
+
+              <p>Username</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              optio animi iste corporis dolorum reprehenderit nulla odit
+              asperiores voluptatibus qui possimus voluptates culpa vel,
+              exercitationem eum doloremque expedita aliquam praesentium.
+            </p>
+          </div>
+          <!--fine terza col-->
+        </div>
+        <!--fine div row dicono di noi-->
+      </div>
+      <!--fine div container dicono di noi-->
+    </main>
+    <footer class="d-fle bg-dark">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col">
+            <div class="d-flex">
+              <button type="button" class="btn btn-dark text-light">
+                Contattaci
+              </button>
+            </div>
+            <div class="mt-5 text-center">
+              <p class="text-light">2025 Travel Island</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
