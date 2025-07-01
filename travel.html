@@ -10,6 +10,11 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <style>
+      #but:hover {
+        background-color: black;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -58,6 +63,7 @@
                 aria-label="Search"
               />
               <button
+                id="but"
                 class="btn btn-outline-success text-danger border border-1 border-danger"
                 type="submit"
               >
@@ -117,7 +123,7 @@
       <div class="container" id="miaSezione">
         <div class="row">
           <div class="col col-6 col-md-4 col-lg-3">
-            <div class="card border border-1 border-info">
+            <div class="card viaggio border border-1 border-info">
               <img
                 src="./assets/madagascar.jpg"
                 class="card-img-top"
@@ -135,7 +141,7 @@
           </div>
           <!--!fine prima colonna-->
           <div class="col col-6 col-md-4 col-lg-3">
-            <div class="card border border-1 border-info">
+            <div class="card viaggio border border-1 border-info">
               <img
                 src="./assets/madagascar.jpg"
                 class="card-img-top"
@@ -153,7 +159,7 @@
           </div>
           <!--!fine seconda colonna-->
           <div class="col col-6 col-md-4 col-lg-3">
-            <div class="card border border-1 border-info">
+            <div class="card viaggio border border-1 border-info">
               <img
                 src="./assets/madagascar.jpg"
                 class="card-img-top"
@@ -171,7 +177,7 @@
           </div>
           <!--!fine terza colonna-->
           <div class="col col-6 d-md-none d-lg-block col-lg-3">
-            <div class="card border border-1 border-info">
+            <div class="card viaggio border border-1 border-info">
               <img
                 src="./assets/madagascar.jpg"
                 class="card-img-top"
@@ -214,7 +220,7 @@
       <div class="container shadow" id="mySezione">
         <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 mt-2">
           <div class="col">
-            <div class="card shadow">
+            <div class="card viaggio travel shadow">
               <img
                 src="./assets/madagascar.jpg"
                 class="card-img-top"
@@ -232,7 +238,7 @@
           </div>
           <!--fine prima col welcome summer-->
           <div class="col">
-            <div class="card shadow">
+            <div class="card viaggio travel shadow">
               <img
                 src="./assets/madagascar.jpg"
                 class="card-img-top"
@@ -251,7 +257,7 @@
           <!--fine seconda col welcome summer-->
 
           <div class="col">
-            <div class="card shadow">
+            <div class="card viaggio travel shadow">
               <img
                 src="./assets/madagascar.jpg"
                 class="card-img-top"
@@ -270,7 +276,7 @@
           <!--fine terza col welcome summer-->
 
           <div class="col">
-            <div class="card shadow">
+            <div class="card viaggio travel shadow">
               <img
                 src="./assets/madagascar.jpg"
                 class="card-img-top"
@@ -289,7 +295,7 @@
           <!--fine quarta col welcome summer-->
 
           <div class="col">
-            <div class="card shadow">
+            <div class="card viaggio travel shadow">
               <img
                 src="./assets/madagascar.jpg"
                 class="card-img-top"
@@ -308,7 +314,7 @@
           <!--fine quinta col welcome summer-->
 
           <div class="col">
-            <div class="card shadow">
+            <div class="card viaggio travel shadow">
               <img
                 src="./assets/madagascar.jpg"
                 class="card-img-top"
@@ -337,7 +343,7 @@
           <div class="col">
             <h3 class="mb-4">Offerta del giorno</h3>
 
-            <div class="d-flex align-items-center">
+            <div class="viaggio d-flex align-items-center">
               <!-- Immagine -->
               <img
                 src="./assets/madagascar.jpg"
@@ -371,7 +377,7 @@
             <img
               src="./assets/madagascar.jpg"
               alt="Madagascar"
-              class="img-fluid m-2"
+              class="img-fluid m-2 viaggio"
             />
           </div>
           <!--fine prima col last minute-->
@@ -379,7 +385,7 @@
             <img
               src="./assets/madagascar.jpg"
               alt="madagascar"
-              class="img-fluid m-2"
+              class="img-fluid m-2 viaggio"
             />
           </div>
           <!--fine seconda col last minute-->
@@ -387,7 +393,7 @@
             <img
               src="./assets/madagascar.jpg"
               alt="Madagascar"
-              class="img-fluid m-2"
+              class="img-fluid m-2 viaggio"
             />
           </div>
           <!--fine terza col last minute-->
@@ -395,7 +401,7 @@
             <img
               src="./assets/madagascar.jpg"
               alt="Madagascar"
-              class="img-fluid m-2"
+              class="img-fluid m-2 viaggio"
             />
           </div>
           <!--fine quarta col last minute-->
@@ -403,7 +409,7 @@
             <img
               src="./assets/madagascar.jpg"
               alt="Madagascar"
-              class="img-fluid m-2"
+              class="img-fluid m-2 viaggio"
             />
           </div>
           <!--fine quinta col last minute-->
@@ -411,7 +417,7 @@
             <img
               src="./assets/madagascar.jpg"
               alt="Madagascar"
-              class="img-fluid m-2"
+              class="img-fluid m-2 viaggio"
             />
           </div>
           <!--fine sesta col last minute-->
@@ -489,13 +495,72 @@
         <!--fine div row dicono di noi-->
       </div>
       <!--fine div container dicono di noi-->
+      <!-- Button trigger modal -->
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">Inserisci la tua email!</div>
+            <div class="modal-footer">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+              </form>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="d-fle bg-dark">
       <div class="container d-flex justify-content-center align-items-center">
         <div class="row">
           <div class="col">
             <div class="d-flex">
-              <button type="button" class="btn btn-dark text-light">
+              <button
+                type="button"
+                class="btn btn-black text-light"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 Contattaci
               </button>
             </div>
@@ -511,5 +576,6 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script src="./travel.js"></script>
   </body>
 </html>
