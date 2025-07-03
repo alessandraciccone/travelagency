@@ -1,0 +1,84 @@
+@import"./scss/variables.scss";
+@import"./scss/functions";
+@import"./scss/utilities";
+@import"./scss/buttons";
+
+
+$border-6:6px;
+$border-7:7px;
+$border-8:8px;
+$border9:9px;
+$border-10:10px;
+
+$other-border:(
+
+7px:$border-7,
+8px:$border-8,
+9px:$border-9,
+10px:$border-10
+)
+
+
+      map-get($utilities, "border-width"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "border-width"), "values"),
+          (
+            6: $border-6,
+            7: $border-7,
+            8: $border-8,
+            9: $border-9,
+            10: $border-10
+          )
+        )
+      );
+    
+
+$padding-6: $spacer * 2.5; 
+$padding-7: $spacer * 3;   
+
+
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 2.5rem;
+
+$my-gutter:0.5rem;
+
+$gutters: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3
+);
+
+
+$my-danger:#ff0077;
+$my-info: #00ffea;
+$my-light:#f3eeff;
+$epicode-1: #5726c3;
+$epicode-2: #8625a5;
+$epicode-3: #cb2376;
+
+
+$n-color:(
+    "danger":$my-danger,
+"info":$my-info,
+"light":$my-light
+
+);
+$my-colors: (
+  "Epicode-1": #5726c3,
+"epicode-2": #8625a5,
+
+"epicode-3": #cb2376
+
+);
+
+
+$theme-colors: map-merge($theme-colors, $my-color,$n-color);
+
+
+      @import"./scss/boostrap";
+
+      
